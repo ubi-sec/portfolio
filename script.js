@@ -1,7 +1,7 @@
 
 const CONFIG = {
   name: "ABAID ULLAH",
-  initials: "YN",
+  initials: "ubi-sec",
   roles: ["SOC Analyst", "IT Security Specialist", "GRC Analyst", "Cybersecurity Graduate"],
   email: "abaidullahali92@gmail.com",
   github: "https://github.com/ubi-sec",
