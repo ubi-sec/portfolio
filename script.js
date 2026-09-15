@@ -4,7 +4,7 @@
 
 const CONFIG = {
     name: "Abaidullah",
-    initials: "AU",
+    initials: "ubi-sec",
 
     roles: [
         "Cybersecurity Enthusiast",
