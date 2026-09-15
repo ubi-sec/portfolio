@@ -1,4 +1,4 @@
-```js
+
 const CONFIG = {
   name: "ABAID ULLAH",
   initials: "YN",
