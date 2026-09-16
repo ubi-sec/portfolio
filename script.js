@@ -13,7 +13,7 @@ const CONFIG = {
   initials: "ubi.sec",
   roles: ["SOC Analyst", "IT Security Specialist", "GRC Analyst", "Cybersecurity Graduate"],
   email: "abaidullahali92@gmail.com",
-  github: "https://github.com/ubi-dec",
+  github: "https://github.com/ubi-sec",
   linkedin: "https://www.linkedin.com/in/abaid-ullah-1229492ba/",
   location: "Faisalabad Pakistan",
   availability: "Open to SOC Analyst, IT Security & GRC opportunities",
