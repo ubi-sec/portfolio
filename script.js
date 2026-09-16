@@ -4,7 +4,7 @@
 
 const CONFIG = {
     name: "Abaidullah",
-    initials: "AU",
+    initials: "ubi-sec",
 
     roles: [
         "Cybersecurity Enthusiast",
@@ -57,11 +57,11 @@ const CONFIG = {
     // Portfolio statistics
     stats: {
         labsCTF: 6,
-        exercisesCompleted: 8,
+        exercisesCompleted: 16,
         certificates: 5,
         inProgress: 1,
         handsOnLab: 7,
-        homeLabPractice: 1
+        homeLabPractice: 4
     }
 };
 
