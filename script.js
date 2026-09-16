@@ -9,18 +9,18 @@
    footer). This is the only place you should need to put your details.
    --------------------------------------------------------------------- */
 const CONFIG = {
-  name: "Your Name",
-  initials: "YN",
+  name: "ABAIDULLAH",
+  initials: "ubi.sec",
   roles: ["SOC Analyst", "IT Security Specialist", "GRC Analyst", "Cybersecurity Graduate"],
-  email: "your.email@example.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://www.linkedin.com/in/yourusername",
-  location: "Your City, Country",
+  email: "abaidullahali92@gmail.com",
+  github: "https://github.com/ubi-dec",
+  linkedin: "https://www.linkedin.com/in/abaid-ullah-1229492ba/",
+  location: "Faisalabad Pakistan",
   availability: "Open to SOC Analyst, IT Security & GRC opportunities",
   resumePath: "assets/resume.pdf",
-  htbProfile: "https://app.hackthebox.com/profile/yourprofile",
-  thmProfile: "https://tryhackme.com/p/yourusername",
-  thmUsername: "yourusername"
+  htbProfile: "https://profile.hackthebox.com/profile/01a02c04-9cd2-702d-9252-3274354377aa?utm_medium=copy_url",
+  thmProfile: "https://tryhackme.com/p/ABAIDULLAH",
+  thmUsername: "ABAIDULLAH"
 };
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
