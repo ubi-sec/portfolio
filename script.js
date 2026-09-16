@@ -28,17 +28,19 @@ const CONFIG = {
     thmProfile: "",
 
     // Your current learning/progress
-    certifications: [
-        "Google Cybersecurity Professional Certificate — In Progress",
-        "Cisco Introduction to Cyber Security",
-        "Cisco Ethical Hacker",
-        "Cisco Help Desk Technician",
-        "Python Essentials 1"
-    ],
+   certifications: [
+    "Google Cybersecurity Professional Certificate — Completed",
+    "Cisco Introduction to Cyber Security",
+    "Cisco Ethical Hacker",
+    "Cisco Help Desk Technician",
+    "Python Essentials 1"
+],
 
-    training: [
-        "Hack The Box — 6 courses completed",
-        "Hack The Box — SOC Level 1 currently studying"
+training: [
+    "IBM Ethical Hacking with Open Source Tools Professional Certificate — In Progress",
+    "Hack The Box — 6 courses completed",
+    "Hack The Box — SOC Level 1 currently studying"
+],
     ],
 
     skills: [
