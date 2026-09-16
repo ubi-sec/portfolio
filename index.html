@@ -159,91 +159,102 @@
             Download résumé
           </a>
         </div>
-<!-- ============================= HERO STATS ============================= -->
-<dl class="hero-stats">
 
-  <div class="hero-stat">
-    <dt class="stat-value" data-counter="6">0</dt>
-    <dd class="stat-label">Labs &amp; CTF exercises completed</dd>
-  </div>
+        <!-- EDIT: update these three figures to match your real activity -->
+        <dl class="hero-stats">
+          <div class="hero-stat">
+            <dt class="stat-value" data-counter="20">0</dt>
+            <dd class="stat-label">Lab &amp; CTF exercises completed</dd>
+          </div>
+          <div class="hero-stat">
+            <dt class="stat-value" data-counter="3">0</dt>
+            <dd class="stat-label">Certifications earned or in progress</dd>
+          </div>
+          <div class="hero-stat">
+            <dt class="stat-value"><span data-counter="6">0</span>mo</dt>
+            <dd class="stat-label">Hands-on home-lab practice</dd>
+          </div>
+        </dl>
+      </div>
 
-  <div class="hero-stat">
-    <dt class="stat-value" data-counter="5">0</dt>
-    <dd class="stat-label">Certifications earned</dd>
-  </div>
-
-  <div class="hero-stat">
-    <dt class="stat-value"><span data-counter="4">0</span>mo</dt>
-    <dd class="stat-label">Hands-on home-lab practice</dd>
-  </div>
-
-</dl>
-<!-- ============================= RECENT ACTIVITY ============================= -->
-
-<aside class="hero-panel" aria-label="Recent activity">
-
-  <div class="panel-card">
-
-    <div class="panel-card-header">
-      <span class="panel-title">Recent activity</span>
-
-      <span class="panel-live">
-        <span class="status-dot status-dot-sm" aria-hidden="true"></span>
-        Updated regularly
-      </span>
+      <aside class="hero-panel" aria-label="Recent activity">
+        <div class="panel-card">
+          <div class="panel-card-header">
+            <span class="panel-title">Recent activity</span>
+            <span class="panel-live"><span class="status-dot status-dot-sm" aria-hidden="true"></span>Updated weekly</span>
+          </div>
+          <ul class="activity-list">
+            <!-- EDIT: swap these for your own recent lab/cert/project updates -->
+            <li class="activity-row">
+              <span class="tag tag-info">Lab</span>
+              <div class="activity-text">
+                <p>Completed TryHackMe room — Intro to SOC Level&nbsp;1</p>
+                <span class="activity-time">2 days ago</span>
+              </div>
+            </li>
+            <li class="activity-row">
+              <span class="tag tag-ok">Cert</span>
+              <div class="activity-text">
+                <p>Finished Google Cybersecurity Professional Certificate</p>
+                <span class="activity-time">1 week ago</span>
+              </div>
+            </li>
+            <li class="activity-row">
+              <span class="tag tag-info">Project</span>
+              <div class="activity-text">
+                <p>Built a home SOC lab with Security Onion + Splunk</p>
+                <span class="activity-time">2 weeks ago</span>
+              </div>
+            </li>
+            <li class="activity-row">
+              <span class="tag tag-warn">Study</span>
+              <div class="activity-text">
+                <p>Mapped a sample risk register to the NIST CSF</p>
+                <span class="activity-time">3 weeks ago</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
     </div>
 
-    <ul class="activity-list">
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+    </a>
+  </section>
 
-      <li class="activity-row">
-        <span class="tag tag-info">Training</span>
-
-        <div class="activity-text">
-          <p>
-            Studying IBM Ethical Hacking with Open Source Tools Professional Certificate
-          </p>
-          <span class="activity-time">Currently in progress</span>
+  <!-- ============================= ABOUT ============================= -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-visual" data-reveal>
+        <div class="avatar-frame">
+          <!-- To use a real photo instead, replace the span below with:
+               <img src="assets/profile.jpg" alt="Portrait of Your Name"> -->
+          <span class="avatar-initials" data-cfg="initials">YN</span>
         </div>
-      </li>
+        <ul class="quick-facts">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-map-pin"/></svg>
+            <span data-cfg="location">Your City, Country</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>
+            <!-- EDIT: your degree / program / institution -->
+            <span>B.S. in Cybersecurity (or your program)</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-target"/></svg>
+            <span>Focus: SOC · IT Security · GRC</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-check-circle"/></svg>
+            <span>Available for internships &amp; junior roles</span>
+          </li>
+        </ul>
+      </div>
 
-      <li class="activity-row">
-        <span class="tag tag-ok">Cert</span>
-
-        <div class="activity-text">
-          <p>
-            Completed Google Cybersecurity Professional Certificate
-          </p>
-          <span class="activity-time">Completed</span>
-        </div>
-      </li>
-
-      <li class="activity-row">
-        <span class="tag tag-info">HTB</span>
-
-        <div class="activity-text">
-          <p>
-            Completed 6 Hack The Box courses
-          </p>
-          <span class="activity-time">Training</span>
-        </div>
-      </li>
-
-      <li class="activity-row">
-        <span class="tag tag-warn">Study</span>
-
-        <div class="activity-text">
-          <p>
-            Currently studying SOC Level 1 and practicing cybersecurity skills
-          </p>
-          <span class="activity-time">Ongoing</span>
-        </div>
-      </li>
-
-    </ul>
-
-  </div>
-
-</aside>
+      <div class="about-copy" data-reveal>
+        <h2>About me</h2>
         <!-- EDIT: replace with your real background and motivation -->
         <p>
           I'm an entry-level cybersecurity professional building a practical foundation in
