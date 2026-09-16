@@ -4,7 +4,7 @@
 
 const CONFIG = {
     name: "Abaidullah",
-    initials: "ubi-sec",
+    initials: "AU",
 
     roles: [
         "Cybersecurity Enthusiast",
@@ -23,26 +23,27 @@ const CONFIG = {
 
     availability: "Open to cybersecurity internship and junior opportunities",
 
-    // Replace these with your real profile links when available
+    // Profile links
     htbProfile: "",
     thmProfile: "",
 
-    // Your current learning/progress
-   certifications: [
-    "Google Cybersecurity Professional Certificate — Completed",
-    "Cisco Introduction to Cyber Security",
-    "Cisco Ethical Hacker",
-    "Cisco Help Desk Technician",
-    "Python Essentials 1"
-],
-
-training: [
-    "IBM Ethical Hacking with Open Source Tools Professional Certificate — In Progress",
-    "Hack The Box — 6 courses completed",
-    "Hack The Box — SOC Level 1 currently studying"
-],
+    // Certifications
+    certifications: [
+        "Google Cybersecurity Professional Certificate — Completed",
+        "Cisco Introduction to Cyber Security",
+        "Cisco Ethical Hacker",
+        "Cisco Help Desk Technician",
+        "Python Essentials 1"
     ],
 
+    // Current training
+    training: [
+        "IBM Ethical Hacking with Open Source Tools Professional Certificate — In Progress",
+        "Hack The Box — 6 courses completed",
+        "Hack The Box — SOC Level 1 currently studying"
+    ],
+
+    // Skills
     skills: [
         "Linux Command Line & Bash",
         "SQL Basics",
@@ -51,8 +52,45 @@ training: [
         "SIEM Concepts",
         "Wireshark",
         "Threat & Vulnerability Assessment Basics"
-    ]
+    ],
+
+    // Portfolio statistics
+    stats: {
+        labsCTF: 6,
+        exercisesCompleted: 8,
+        certificates: 5,
+        inProgress: 1,
+        handsOnLab: 7,
+        homeLabPractice: 1
+    }
 };
+
+
+// ==========================================
+// HELPER FUNCTIONS
+// ==========================================
+
+function setText(selector, value) {
+    const elements = document.querySelectorAll(selector);
+
+    elements.forEach(element => {
+        element.textContent = value;
+    });
+}
+
+
+function setLink(selector, url) {
+    const elements = document.querySelectorAll(selector);
+
+    elements.forEach(element => {
+        if (url) {
+            element.href = url;
+            element.target = "_blank";
+            element.rel = "noopener noreferrer";
+        }
+    });
+}
+
 
 
 // ==========================================
