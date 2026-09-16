@@ -1,0 +1,19 @@
+Put these two files in this folder:
+
+1. resume.pdf   — your resume, exported as a PDF.
+                  This is what the "Download résumé" and "View in browser"
+                  buttons link to.
+
+2. profile.jpg  — optional headshot. If you add one, open index.html,
+                  find the "about-visual" section, and replace:
+
+                      <span class="avatar-initials" data-cfg="initials">YN</span>
+
+                  with:
+
+                      <img src="assets/profile.jpg" alt="Portrait of Your Name">
+
+If you don't add a resume.pdf, the download buttons will simply lead to
+a 404 until you do — everything else on the site works without it.
+
+You can delete this file once you've added your own.
