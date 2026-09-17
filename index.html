@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+  ============================================================
+  RED TEAMING / PENETRATION TESTING PORTFOLIO — index.html
+  ============================================================
+  QUICK EDIT GUIDE
+  1. Personal details (name, email, GitHub, LinkedIn, location,
+     resume path, Hack The Box / TryHackMe links) live in the
+     CONFIG object at the top of script.js — edit them there.
+  2. Search this file for the word EDIT to find every section
+     that still has placeholder or template content (the Resume
+     timeline and the three "Planned" project slots).
+  3. Certifications, training and skills below reflect real,
+     stated information — update them as your training and
+     certifications progress.
+  ============================================================
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABAIDULLAH — Red Teaming & Penetration Testing</title>
+<meta name="description" content="ABAIDULLAH's cybersecurity portfolio — developing Red Teaming, Penetration Testing and Ethical Hacking skills on a foundation of SOC and Blue Team fundamentals.">
+<meta name="keywords" content="Red Teaming, Penetration Testing, Offensive Security, Ethical Hacking, Cybersecurity Labs, SOC, Blue Team, Hack The Box">
+<meta name="author" content="ABAIDULLAH">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://portfolio.abaidullahali92.workers.dev/">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ABAIDULLAH — Red Teaming & Penetration Testing">
+<meta property="og:description" content="Developing Red Teaming, Penetration Testing and Ethical Hacking skills on a foundation of SOC and Blue Team fundamentals.">
+<meta property="og:url" content="https://portfolio.abaidullahali92.workers.dev/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ABAIDULLAH — Red Teaming & Penetration Testing">
+<meta name="twitter:description" content="Developing Red Teaming, Penetration Testing and Ethical Hacking skills on a foundation of SOC and Blue Team fundamentals.">
+
+<meta name="theme-color" content="#0b0f14">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "ABAIDULLAH",
+  "jobTitle": "Red Teaming & Penetration Testing",
+  "description": "Cybersecurity professional developing hands-on skills in Red Teaming, Penetration Testing and Ethical Hacking, with a foundation in SOC and Blue Team fundamentals.",
+  "url": "https://portfolio.abaidullahali92.workers.dev/",
+  "sameAs": [
+    "https://github.com/ubi-sec",
+    "https://www.linkedin.com/in/abaid-ullah-1229492ba/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Reusable icon sprite. Icons are referenced elsewhere as <svg class="icon"><use href="#icon-x"/></svg> -->
+<svg class="icon-sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.6"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="12" y="16.5" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" font-weight="600" fill="currentColor">in</text></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m2 6 10 7L22 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 21h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m5 12 7-7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M15 3h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14 21 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></symbol>
+    <symbol id="icon-check-circle" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="m9 11 3 3L22 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="3.5" y="10.5" width="17" height="10.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M7 10.5V7a5 5 0 0 1 10 0v3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-network" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="6" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="19" r="2.6" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="8.4" y1="10.6" x2="15.6" y2="6.4" stroke="currentColor" stroke-width="1.5"/><line x1="8.4" y1="13.4" x2="15.6" y2="17.6" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="icon-activity" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-clipboard" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><rect x="8" y="2" width="8" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8 6 2 12 8 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-cloud" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h.79a4.5 4.5 0 1 1 0 9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="19" x2="20" y2="19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><polyline points="12 7 12 12 15.5 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-briefcase" viewBox="0 0 24 24"><rect x="2.5" y="7" width="19" height="13.5" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 20.5V5.5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v15" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="icon-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="4" y1="22" x2="4" y2="15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="8" y1="13" x2="16" y2="13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="8" y1="17" x2="16" y2="17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============================= HEADER / NAV ============================= -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="Homepage">
+      <svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg>
+      <span class="brand-name" data-cfg="initials">ubi.sec</span>
+    </a>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#redteam" class="nav-link">Red Team</a></li>
+        <li><a href="#labs" class="nav-link">Labs</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#resume" class="nav-link">Résumé</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary btn-small nav-cta">Let's talk</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <svg class="icon icon-open" aria-hidden="true"><use href="#icon-menu"/></svg>
+      <svg class="icon icon-close" aria-hidden="true"><use href="#icon-close"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span data-cfg="availability">Open to Red Team, Penetration Testing & Cybersecurity opportunities</span>
+        </p>
+
+        <h1 class="hero-name" data-cfg="name">ABAIDULLAH</h1>
+        <p class="hero-role">
+          <span id="role-text" class="role-text">Red Teaming</span><span class="role-cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-lede">
+          I have a cybersecurity foundation spanning security fundamentals, network security and
+          Blue Team / SOC concepts. I'm now developing hands-on offensive security skills —
+          Penetration Testing, Ethical Hacking and Red Teaming — through structured training,
+          Hack The Box practice and guided lab environments.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#redteam" class="btn btn-primary">View offensive security practice</a>
+          <a data-cfg-href="resume" download class="btn btn-secondary">
+            <svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg>
+            Download résumé
+          </a>
+        </div>
+
+        <!-- Primary hero statistics — do not expand beyond these 3 cards -->
+        <dl class="hero-stats">
+          <div class="hero-stat">
+            <dt class="stat-value" data-counter="6">0</dt>
+            <dd class="stat-label">Labs &amp; CTF</dd>
+          </div>
+          <div class="hero-stat">
+            <dt class="stat-value" data-counter="16">0</dt>
+            <dd class="stat-label">Exercises completed</dd>
+          </div>
+          <div class="hero-stat">
+            <dt class="stat-value" data-counter="7">0</dt>
+            <dd class="stat-label">Hands-on labs</dd>
+          </div>
+        </dl>
+      </div>
+
+      <aside class="hero-panel" aria-label="Recent activity">
+        <div class="panel-card tilt-card">
+          <div class="panel-card-header">
+            <span class="panel-title">Recent activity</span>
+            <span class="panel-live"><span class="status-dot status-dot-sm" aria-hidden="true"></span>Updated weekly</span>
+          </div>
+          <ul class="activity-list">
+            <!-- EDIT: swap these for your own recent lab/cert/project updates -->
+            <li class="activity-row">
+              <span class="tag tag-warn">Practice</span>
+              <div class="activity-text">
+                <p>Practicing penetration-testing labs and CTF exercises</p>
+                <span class="activity-time">This week</span>
+              </div>
+            </li>
+            <li class="activity-row">
+              <span class="tag tag-warn">Study</span>
+              <div class="activity-text">
+                <p>Studying the IBM Ethical Hacking with Open Source Tools course</p>
+                <span class="activity-time">Ongoing</span>
+              </div>
+            </li>
+            <li class="activity-row">
+              <span class="tag tag-warn">Labs</span>
+              <div class="activity-text">
+                <p>Working through Hack The Box's SOC Level 1 learning path</p>
+                <span class="activity-time">Ongoing</span>
+              </div>
+            </li>
+            <li class="activity-row">
+              <span class="tag tag-ok">Training</span>
+              <div class="activity-text">
+                <p>Completed 6 courses on Hack The Box Academy</p>
+                <span class="activity-time">Recently</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"/></svg>
+    </a>
+  </section>
+
+  <!-- ============================= ABOUT ============================= -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-visual" data-reveal>
+        <div class="avatar-frame">
+          <img src="assets/profile.jpg" alt="Portrait of Abaidullah" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+        </div>
+        <ul class="quick-facts">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-map-pin"/></svg>
+            <span data-cfg="location">Faisalabad Pakistan</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>
+            <!-- EDIT: your degree / program / institution -->
+            <span>B.S. in Cybersecurity (or your program)</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-target"/></svg>
+            <span>Focus: Red Teaming · Penetration Testing</span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#icon-check-circle"/></svg>
+            <span>Available for internships &amp; junior roles</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-copy" data-reveal>
+        <h2>About me</h2>
+        <p>
+          I'm building a cybersecurity foundation that spans both defensive and offensive
+          disciplines. My background includes security fundamentals, network security, Linux,
+          and Blue Team concepts like SIEM and security monitoring — the kind of grounding a
+          SOC or security operations team relies on.
+        </p>
+        <p>
+          My current focus has shifted toward offensive security. I'm actively developing
+          hands-on skills in Penetration Testing, Ethical Hacking and Red Teaming through
+          structured training, Hack The Box practice and guided lab environments — building on
+          my defensive foundation rather than replacing it.
+        </p>
+
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <svg class="icon" aria-hidden="true"><use href="#icon-activity"/></svg>
+            <h3>Analytical by habit</h3>
+            <p>Comfortable working through logs, alerts and evidence methodically before drawing conclusions.</p>
+          </div>
+          <div class="highlight-card">
+            <svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>
+            <h3>Always learning</h3>
+            <p>Weekly practice on Hack The Box, plus ongoing ethical hacking and Red Team training.</p>
+          </div>
+          <div class="highlight-card">
+            <svg class="icon" aria-hidden="true"><use href="#icon-clipboard"/></svg>
+            <h3>Documentation-minded</h3>
+            <p>Writes clear notes and write-ups — useful for findings reports and handoffs alike.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= RED TEAM / OFFENSIVE SECURITY ============================= -->
+  <section class="section" id="redteam">
+    <div class="section-inner">
+      <h2>Red Teaming &amp; Penetration Testing</h2>
+      <p class="section-lead">
+        Currently developing hands-on offensive security skills through penetration-testing
+        labs, CTF exercises, ethical hacking training, and guided security environments.
+      </p>
+
+      <!-- Secondary statistics (kept separate from the 3 primary hero cards) -->
+      <dl class="hero-stats" data-reveal style="margin-bottom: 2.5rem;">
+        <div class="hero-stat">
+          <dt class="stat-value stat-value-sm" data-counter="5">0</dt>
+          <dd class="stat-label">Certifications</dd>
+        </div>
+        <div class="hero-stat">
+          <dt class="stat-value stat-value-sm" data-counter="1">0</dt>
+          <dd class="stat-label">Course in progress</dd>
+        </div>
+        <div class="hero-stat">
+          <dt class="stat-value stat-value-sm"><span data-counter="4">0</span>mo</dt>
+          <dd class="stat-label">Home-lab practice</dd>
+        </div>
+      </dl>
+
+      <div class="practice-grid" data-reveal>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-target"/></svg>
+            <span class="tag tag-warn">Currently developing</span>
+          </div>
+          <h3>Penetration Testing</h3>
+          <p>Building practical assessment skills through structured labs and guided exercises.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-terminal"/></svg>
+            <span class="tag tag-warn">Currently developing</span>
+          </div>
+          <h3>Ethical Hacking</h3>
+          <p>Studying attacker methodology, tooling, and responsible disclosure practices.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-network"/></svg>
+            <span class="tag tag-warn">Currently developing</span>
+          </div>
+          <h3>Red Teaming</h3>
+          <p>Learning adversary-emulation concepts alongside my SOC and Blue Team foundation.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-activity"/></svg>
+            <span class="tag tag-warn">Currently developing</span>
+          </div>
+          <h3>Vulnerability Assessment</h3>
+          <p>Applying scanning and triage fundamentals in guided lab environments.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-flag"/></svg>
+            <span class="tag tag-warn">Currently developing</span>
+          </div>
+          <h3>CTF / Security Labs</h3>
+          <p>Regular practice on Hack The Box, including 6 completed courses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= LABS ============================= -->
+  <section class="section section-alt" id="labs">
+    <div class="section-inner">
+      <h2>Practical labs</h2>
+      <p class="section-lead">
+        Structured practice across offensive-security fundamentals, categorised honestly by
+        how far along each area actually is — no completed work is claimed unless it's real.
+      </p>
+
+      <div class="lab-stats" data-reveal>
+        <div class="panel-card tilt-card lab-stat-card">
+          <div class="panel-card-header">
+            <span class="panel-title">Hack The Box</span>
+            <svg class="icon" aria-hidden="true"><use href="#icon-flag"/></svg>
+          </div>
+          <div class="lab-stat-row">
+            <div><span class="stat-value stat-value-sm">6</span><span class="stat-label">Courses completed</span></div>
+          </div>
+          <a data-cfg-href="htb" class="btn btn-secondary btn-small" target="_blank" rel="noopener">View profile</a>
+        </div>
+
+        <div class="panel-card tilt-card lab-stat-card">
+          <div class="panel-card-header">
+            <span class="panel-title">TryHackMe</span>
+            <svg class="icon" aria-hidden="true"><use href="#icon-terminal"/></svg>
+          </div>
+          <div id="thm-badge-wrap">
+            <img id="thm-badge" alt="TryHackMe profile badge" loading="lazy" style="max-width:100%;border-radius:6px;display:none;">
+            <div id="thm-badge-fallback" class="lab-stat-row">
+              <div><span class="stat-value stat-value-sm">Active</span><span class="stat-label">Learning path in progress</span></div>
+            </div>
+          </div>
+          <a data-cfg-href="thm" class="btn btn-secondary btn-small" target="_blank" rel="noopener">View profile</a>
+        </div>
+      </div>
+
+      <div class="practice-grid" data-reveal>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-target"/></svg>
+            <span class="tag tag-info">Currently learning</span>
+          </div>
+          <h3>Reconnaissance</h3>
+          <p>Passive and active information-gathering techniques.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-network"/></svg>
+            <span class="tag tag-info">Currently learning</span>
+          </div>
+          <h3>Enumeration</h3>
+          <p>Identifying services, users and attack surface on a target.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-network"/></svg>
+            <span class="tag tag-info">Currently learning</span>
+          </div>
+          <h3>Network Security Testing</h3>
+          <p>Assessing network-layer configurations and exposure.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-code"/></svg>
+            <span class="tag tag-info">Currently learning</span>
+          </div>
+          <h3>Web Security Testing</h3>
+          <p>Common web-application vulnerabilities and testing methodology.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-activity"/></svg>
+            <span class="tag tag-info">Currently learning</span>
+          </div>
+          <h3>Vulnerability Assessment</h3>
+          <p>Scanning, prioritising and validating findings.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-terminal"/></svg>
+            <span class="tag tag-info">Currently learning</span>
+          </div>
+          <h3>Linux Security</h3>
+          <p>Command-line proficiency and Linux-based lab environments.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-lock"/></svg>
+            <span class="tag tag-info">Currently learning</span>
+          </div>
+          <h3>Windows Security Fundamentals</h3>
+          <p>Core Windows and Active Directory security concepts.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-lock"/></svg>
+            <span class="tag tag-info">Currently learning</span>
+          </div>
+          <h3>Privilege Escalation Practice</h3>
+          <p>Working through guided privilege-escalation scenarios.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-flag"/></svg>
+            <span class="tag tag-warn">Currently practicing</span>
+          </div>
+          <h3>CTF Exercises</h3>
+          <p>Working through structured courses on Hack The Box Academy.</p>
+        </div>
+        <div class="practice-card tilt-card">
+          <div class="practice-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-network"/></svg>
+            <span class="tag tag-info">Currently learning</span>
+          </div>
+          <h3>Red Team Fundamentals</h3>
+          <p>Introductory adversary-emulation and Red Team concepts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= PROJECTS ============================= -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <h2>Projects</h2>
+      <p class="section-lead">
+        Real Red Team and penetration-testing project write-ups will be published here as I
+        complete them — the slots below are ready for that work.
+      </p>
+
+      <div class="project-grid" data-reveal>
+        <!-- EDIT: replace each slot below with a real project once you have one -->
+        <article class="project-card is-planned tilt-card">
+          <span class="tag tag-plan">Planned</span>
+          <h3>Your first penetration-testing project</h3>
+          <p>Replace this card with a real write-up once you have one. Suggested fields: objective, security area (network / web / Active Directory), tools used, methodology, and status.</p>
+        </article>
+        <article class="project-card is-planned tilt-card">
+          <span class="tag tag-plan">Planned</span>
+          <h3>CTF or Red Team lab write-up</h3>
+          <p>A good second slot for a detailed Hack The Box or guided-lab write-up — what you were asked to find, how you approached it, and what you learned.</p>
+        </article>
+        <article class="project-card is-planned tilt-card">
+          <span class="tag tag-plan">Planned</span>
+          <h3>Home-lab or research project</h3>
+          <p>Use this for independent work — a home-lab build, a tool you scripted, or applied research — with real findings once available.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= SKILLS ============================= -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <h2>Cybersecurity skills</h2>
+      <p class="section-lead">
+        Organised by where I am in my cybersecurity journey — from foundational knowledge,
+        through Blue Team basics, to the offensive skills I'm actively building now.
+      </p>
+
+      <div class="skill-grid" data-reveal>
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-target"/></svg>
+            <h3>Offensive security</h3>
+          </div>
+          <span class="status-note">Currently developing</span>
+          <ul class="badge-list">
+            <li class="badge">Penetration Testing</li>
+            <li class="badge">Ethical Hacking</li>
+            <li class="badge">Red Teaming</li>
+            <li class="badge">Vulnerability Assessment</li>
+            <li class="badge">CTF / Security Labs</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-lock"/></svg>
+            <h3>Cybersecurity foundation</h3>
+          </div>
+          <ul class="badge-list">
+            <li class="badge">Linux Command Line &amp; Bash</li>
+            <li class="badge">SQL Basics</li>
+            <li class="badge">Network Security Fundamentals</li>
+            <li class="badge">NIST Cybersecurity Framework</li>
+            <li class="badge">Wireshark</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-head">
+            <svg class="icon" aria-hidden="true"><use href="#icon-activity"/></svg>
+            <h3>Blue Team / security operations</h3>
+          </div>
+          <ul class="badge-list">
+            <li class="badge">SIEM Concepts</li>
+            <li class="badge">Threat &amp; Vulnerability Assessment Basics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= CERTIFICATIONS ============================= -->
+  <section class="section" id="certifications">
+    <div class="section-inner">
+      <h2>Certifications &amp; training</h2>
+      <p class="section-lead">
+        A mix of completed certifications and training currently in progress.
+      </p>
+
+      <div class="cert-grid" data-reveal>
+        <article class="cert-card tilt-card">
+          <div class="cert-card-top">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-award"/></svg>
+            <span class="tag tag-ok">Completed</span>
+          </div>
+          <h3>Google Cybersecurity Professional Certificate</h3>
+          <p class="cert-meta">Google</p>
+          <p>Covers security fundamentals, networks, Linux, SQL and incident detection.</p>
+        </article>
+
+        <article class="cert-card tilt-card">
+          <div class="cert-card-top">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-award"/></svg>
+            <span class="tag tag-ok">Completed</span>
+          </div>
+          <h3>Cisco Introduction to Cyber Security</h3>
+          <p class="cert-meta">Cisco</p>
+          <p>Foundational course on cybersecurity concepts and common threats.</p>
+        </article>
+
+        <article class="cert-card tilt-card">
+          <div class="cert-card-top">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-award"/></svg>
+            <span class="tag tag-ok">Completed</span>
+          </div>
+          <h3>Cisco Ethical Hacker</h3>
+          <p class="cert-meta">Cisco</p>
+          <p>Introduces ethical hacking methodology and penetration-testing concepts.</p>
+        </article>
+
+        <article class="cert-card tilt-card">
+          <div class="cert-card-top">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-award"/></svg>
+            <span class="tag tag-ok">Completed</span>
+          </div>
+          <h3>Cisco Help Desk Technician</h3>
+          <p class="cert-meta">Cisco</p>
+          <p>IT support fundamentals, troubleshooting and customer-facing technical skills.</p>
+        </article>
+
+        <article class="cert-card tilt-card">
+          <div class="cert-card-top">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-award"/></svg>
+            <span class="tag tag-ok">Completed</span>
+          </div>
+          <h3>Python Essentials 1</h3>
+          <p>Python programming fundamentals — syntax, data types and control flow.</p>
+        </article>
+
+        <article class="cert-card tilt-card">
+          <div class="cert-card-top">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-award"/></svg>
+            <span class="tag tag-warn">In progress</span>
+          </div>
+          <h3>IBM Ethical Hacking with Open Source Tools Professional Certificate</h3>
+          <p class="cert-meta">IBM</p>
+          <p>Studying open-source offensive-security tools and techniques.</p>
+        </article>
+
+        <article class="cert-card tilt-card">
+          <div class="cert-card-top">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-flag"/></svg>
+            <span class="tag tag-ok">6 courses completed</span>
+          </div>
+          <h3>Hack The Box Academy</h3>
+          <p class="cert-meta">Hack The Box</p>
+          <p>Working through structured offensive-security courses and hands-on labs.</p>
+        </article>
+
+        <article class="cert-card tilt-card">
+          <div class="cert-card-top">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#icon-flag"/></svg>
+            <span class="tag tag-warn">Currently studying</span>
+          </div>
+          <h3>Hack The Box — SOC Level 1</h3>
+          <p class="cert-meta">Hack The Box</p>
+          <p>Working through this SOC-focused learning path.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= RESUME ============================= -->
+  <section class="section section-alt" id="resume">
+    <div class="section-inner resume-grid">
+      <div data-reveal>
+        <h2>Résumé</h2>
+        <p>
+          The résumé below covers my education, coursework and lab experience in full detail —
+          download it directly or reach out and I'll send an updated copy.
+        </p>
+        <div class="hero-actions">
+          <a data-cfg-href="resume" download class="btn btn-primary">
+            <svg class="icon" aria-hidden="true"><use href="#icon-download"/></svg>
+            Download résumé (PDF)
+          </a>
+          <a data-cfg-href="resume" target="_blank" rel="noopener" class="btn btn-secondary">
+            <svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg>
+            View in browser
+          </a>
+        </div>
+      </div>
+
+      <ol class="timeline" data-reveal>
+        <!-- EDIT: replace with your real education / experience timeline -->
+        <li class="timeline-item">
+          <svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>
+          <div>
+            <h3>B.S. in Cybersecurity</h3>
+            <p class="cert-meta">Your University — Expected 2026</p>
+            <p>Coursework in network security, systems administration, digital forensics and risk management.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <svg class="icon" aria-hidden="true"><use href="#icon-briefcase"/></svg>
+          <div>
+            <h3>IT Support Technician (Part-time)</h3>
+            <p class="cert-meta">Your Employer — 2024–Present</p>
+            <p>Handled account provisioning, endpoint troubleshooting and first-line security tickets for internal staff.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <svg class="icon" aria-hidden="true"><use href="#icon-award"/></svg>
+          <div>
+            <h3>Self-directed lab practice</h3>
+            <p class="cert-meta">Ongoing</p>
+            <p>Weekly practice on Hack The Box and TryHackMe, alongside ethical hacking and Red Team training.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================= CONTACT ============================= -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-grid">
+      <div data-reveal>
+        <h2>Get in touch</h2>
+        <p>
+          I'm actively looking for Red Team, penetration-testing and cybersecurity internship
+          or junior opportunities. If there's a fit, I'd like to hear from you.
+        </p>
+
+        <ul class="contact-methods">
+          <li>
+            <a data-cfg-href="email" class="contact-method">
+              <svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg>
+              <span data-cfg="email">abaidullahali92@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a data-cfg-href="linkedin" target="_blank" rel="noopener" class="contact-method">
+              <svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a data-cfg-href="github" target="_blank" rel="noopener" class="contact-method">
+              <svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <span class="contact-method contact-method-static">
+              <svg class="icon" aria-hidden="true"><use href="#icon-map-pin"/></svg>
+              <span data-cfg="location">Faisalabad Pakistan</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form" data-reveal novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+          <span class="form-error" id="name-error"></span>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <span class="form-error" id="email-error"></span>
+        </div>
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+          <span class="form-error" id="subject-error"></span>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="form-error" id="message-error"></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg>
+      <span data-cfg="name">ABAIDULLAH</span>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#about">About</a>
+      <a href="#redteam">Red Team</a>
+      <a href="#labs">Labs</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Résumé</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      <a data-cfg-href="github" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg></a>
+      <a data-cfg-href="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="icon" aria-hidden="true"><use href="#icon-linkedin"/></svg></a>
+      <a data-cfg-href="email" aria-label="Send an email"><svg class="icon" aria-hidden="true"><use href="#icon-mail"/></svg></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="footer-year"></span> <span data-cfg="name">ABAIDULLAH</span>. All rights reserved.</p>
+    <button id="back-to-top" aria-label="Back to top">
+      <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"/></svg>
+    </button>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
